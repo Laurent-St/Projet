@@ -1,4 +1,4 @@
-function [message,bits]=msg(T_symb,pics_par_T)
+function message=msg(bits,T_symb,pics_par_T)
 %INPUTS:
 %-N=nbre de bits
 %-T_symb=écart de temps entre 2 bits
@@ -6,8 +6,6 @@ function [message,bits]=msg(T_symb,pics_par_T)
 %OUTPUTS:
 %-message=message m(t), onde rectangulaire de -1 à 1
 
-N=1000;
-bits=randi(2,1,N)-1;
 
 % text_tx = 'Benj la keh' ;
 % text_tx_int = uint8(double(text_tx)) ; % 8 bits/character
