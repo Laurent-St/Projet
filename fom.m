@@ -30,6 +30,7 @@ P_bruit_pur = (1/length(b_p)) * sum(b_p.*b_p);
 SNRout=P_SSB_out/P_bruit_pur;
 
 %%%
+
 FOM = SNRout/SNRin;
 
 

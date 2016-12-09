@@ -1,4 +1,4 @@
-function [s_t_emis, temps] = emetteur(bits)
+function [s_t_emis, temps] = emetteur(bits,kf)
 
 %anciennement fct_labo1
 
@@ -10,7 +10,6 @@ OSF=20000/f_symb;    %OSF=oversampling factor = nombre de pics par bit
                        %fs = 20000 c'est la fréquence typique matlab qu'il
                        %faut mettre pour respecter le critère de nitch
 pics_par_T=OSF;
-kf=500;
 fc=6000;
 %%%%%%%%%%%%%%%%%%
 
